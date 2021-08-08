@@ -1,0 +1,14 @@
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0B2300;
+    padding-top: 0.75%;
+    padding-bottom: 0.75%;
+}
+
+.imagens{
+    padding-right: 50%;
+    text-align: right;
+}

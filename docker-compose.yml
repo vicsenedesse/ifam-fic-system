@@ -10,7 +10,7 @@ services:
       - "8888:80"
     environment:
       - MYSQL_ROOT_PASSWORD=password
-      - MYSQL_DATABASE=dbuser 
+      - MYSQL_DATABASE=db_ficsystem 
     links:
       - db 
 
@@ -22,7 +22,7 @@ services:
       - '3306:3306'
     environment:
       # - MYSQL_ROOT_HOST=%
-      - MYSQL_DATABASE=dbuser
+      - MYSQL_DATABASE=db_ficsystem
       # - MYSQL_USER=root
       - MYSQL_ROOT_PASSWORD=password
       # - MYSQL_ALLOW_EMPTY_PASSWORD=yes
@@ -31,23 +31,23 @@ services:
       - ./init.sql:/init.sql
 
   
-  userservice:
+  ficsystem:
     # command: mvn clean install
     build:
       context: ./
       dockerfile: ./user/Dockerfile
-    image: user/api
+    image: ficsystem/api
 
     ports:
-      - "8081:8081"
-      - "5056:5006"
+      - "8080:8080"
+      - "5005:5005"
     volumes:
-      - "./user:/home/user"
+      - "./ficsystem:/home/ficsystem"
     environment:
       - ADDITIONAL_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5006 -Xmx1G -Xms128m -XX:MaxMetaspaceSize=128m
       - PROFILE=dev
       - MYSQL_ROOT_PASSWORD=password
-      - MYSQL_DATABASE=dbuser
+      - MYSQL_DATABASE=db_ficsystem
 #      - MYSQL_ROOT_HOST= '%'
     links:
       - db

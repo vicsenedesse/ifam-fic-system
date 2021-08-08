@@ -9,24 +9,32 @@ import { ProfessorComponent } from './professor/professor.component';
 import { CursoFicComponent } from './curso-fic/curso-fic.component';
 import { UserComponent } from './user/user.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
-import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { FooterHomeComponent } from './footer-home/footer-home.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    
     AlunoComponent,
     TurmaComponent,
     ProfessorComponent,
     CursoFicComponent,
     UserComponent,
+
     ToolbarComponent,
-    MenuComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    FooterHomeComponent,
+
+
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
