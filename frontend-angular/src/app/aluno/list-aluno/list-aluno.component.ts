@@ -1,3 +1,4 @@
+import { ElementRef } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListAlunoComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private elemento: ElementRef
+  ) { }
 
   ngOnInit() {
+  }
+
+  ngAfterViewInit(): void {
+      this.elemento.nativeElement.ownerDocument.body.style.background = 'url(../../../../../assets/WhatsApp Image 2021-08-10 at 17.00.24.jpeg)';
   }
 
 }
