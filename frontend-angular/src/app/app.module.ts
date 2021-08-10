@@ -15,6 +15,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { FooterHomeComponent } from './footer-home/footer-home.component';
+import { ListTurmaComponent } from './turma/list-turma/list-turma.component';
 
 
 @NgModule({
@@ -23,6 +24,8 @@ import { FooterHomeComponent } from './footer-home/footer-home.component';
 
     AlunoComponent,
     TurmaComponent,
+    //Importando as pastas do crud:
+    ListTurmaComponent,
     ProfessorComponent,
     CursoFicComponent,
     UserComponent,
