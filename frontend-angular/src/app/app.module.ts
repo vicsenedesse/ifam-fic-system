@@ -1,3 +1,6 @@
+import { ListAlunoComponent } from './aluno/list-aluno/list-aluno.component';
+import { UpdateAlunoComponent } from './aluno/update-aluno/update-aluno.component';
+import { CreateAlunoComponent } from './aluno/create-aluno/create-aluno.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -26,6 +29,11 @@ import { ListTurmaComponent } from './turma/list-turma/list-turma.component';
     ProfessorComponent,
     CursoFicComponent,
     UserComponent,
+
+    /*Componentes Aluno*/
+    CreateAlunoComponent,
+    ListAlunoComponent,
+    UpdateAlunoComponent,
 
 
     ToolbarComponent,
