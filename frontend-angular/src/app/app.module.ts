@@ -1,3 +1,6 @@
+import { ListAlunoComponent } from './aluno/list-aluno/list-aluno.component';
+import { UpdateAlunoComponent } from './aluno/update-aluno/update-aluno.component';
+import { CreateAlunoComponent } from './aluno/create-aluno/create-aluno.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -17,12 +20,18 @@ import { FooterHomeComponent } from './footer-home/footer-home.component';
 @NgModule({
   declarations: [
     AppComponent,
-    
+
     AlunoComponent,
     TurmaComponent,
     ProfessorComponent,
     CursoFicComponent,
     UserComponent,
+
+    /*Componentes Aluno*/
+    CreateAlunoComponent,
+    ListAlunoComponent,
+    UpdateAlunoComponent,
+
 
     ToolbarComponent,
     FooterComponent,
@@ -30,7 +39,7 @@ import { FooterHomeComponent } from './footer-home/footer-home.component';
     FooterHomeComponent,
 
 
-    
+
   ],
   imports: [
     BrowserModule,
