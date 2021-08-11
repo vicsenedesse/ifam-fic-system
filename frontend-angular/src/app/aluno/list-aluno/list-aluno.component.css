@@ -1,3 +1,89 @@
-.container{
-  background-image: url(../../../assets/background-Aluno.jpeg);
+.bg{
+  background: url(../../../assets/background-Aluno.jpeg);
+  width: 100%;
+  height: 930px;
+  object-fit: cover;
+  object-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: -ms-page;
+}
+
+div#dashmain{
+
+  height: 100%;
+  width: 100%;
+  position: fixed;
+
+}
+
+.card{
+  position: relative;
+  width: 1400px;
+  height: relative;
+  left: 225px;
+  top: 177px;
+  padding: 15px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 20px 70px rgba(124, 8, 8, 0.2);
+  border-radius: 13px;
+}
+
+h2{
+  position: absolute;
+  width: 218px;
+  height: 26px;
+  left: 250px;
+  top: 119px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+hr{
+  margin-left: -35px;
+  position: absolute;
+  width: 1400px;
+}
+
+.panel-body{
+  margin-top: 30px;
+  margin-left: 35px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  text-align: center;
+
+  color: #133702;
+}
+
+#iconEdit{
+  margin-left: -75px;
+}
+#iconDelete{
+  margin-left: -150px;
+}
+
+button#new{
+  width: 140px;
+  height: 30px;
+  border-radius: 13px;
+  color: #FFFFFF;
+  background-color: #133702;
+}
+
+label#busca, input#busca {
+  margin-left: 250px;
 }

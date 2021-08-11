@@ -1,3 +1,39 @@
-<p>
-  list-aluno works!
-</p>
+<app-toolbar></app-toolbar>
+<div class="bg">
+   <!--<img style="background-repeat: no-repeat; width: 100%; height: 100%;background-size: cover; object-fit: cover;"
+  src="../../../assets/backgroud-Turma.jpeg">-->
+  <h2>Listagem de Alunos</h2>
+  <div class="card">
+    <div id="control">
+      <button routerLink="/home" type="button" id="new" class="btn">Novo Aluno +</button>
+      <label id="busca">Buscar Aluno</label><br>
+      <input id="busca" type="text">
+    </div>
+
+    <div class="panel-body" >
+      <table id="example" class="table" cellspacing="0" width="100%">
+        <thead class="table-light" >
+          <tr style="font-family: 'Roboto', 'normal'; color: #133702;">
+            <th scope="col">#</th>
+            <th scope="col">Matrícula</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Ações</th>
+          </tr>
+          <hr><br>
+          <tbody>
+              <tr style="font-family: 'Roboto', 'normal'; color: #133702;">
+              <td>1</td>
+              <td>2019001011</td>
+              <td>Raphaela Goes</td>
+              <td><i id="iconEdit" class="bi bi-pencil" style="color: #00692C"></i></td>
+              <td><i id="iconDelete" class="bi bi-trash btn" style="color: #9C1010"></i></td>
+            </tr>
+          </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<app-footer></app-footer>
