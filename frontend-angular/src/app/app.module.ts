@@ -18,6 +18,7 @@ import { FooterHomeComponent } from './footer-home/footer-home.component';
 import { SwiperModule } from 'swiper/angular';
 import { SwiperImagesComponent } from './home/swiper/swiper-images.component';
 import { ListTurmaComponent } from './turma/list-turma/list-turma.component';
+import { ListProfessorComponent } from './professor/list-professor/list-professor.component';
 
 
 @NgModule({
@@ -25,10 +26,16 @@ import { ListTurmaComponent } from './turma/list-turma/list-turma.component';
     AppComponent,
 
     AlunoComponent,
+    
+    //TURMA
     TurmaComponent,
-    //Importando as pastas do crud:
     ListTurmaComponent,
+
+    //PROFESSOR
     ProfessorComponent,
+    ListProfessorComponent,
+
+
     CursoFicComponent,
     UserComponent,
 

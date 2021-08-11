@@ -27,6 +27,8 @@ section{
 }
 
 .col1{
+  margin-top: 15px;
+
   position: absolute;
   width: 256px;
   height: 0px;
@@ -39,6 +41,8 @@ section{
 
 
 .col2{
+  margin-top: 15px;
+
   position: absolute;
   width: 177px;
   height: 259px;
@@ -55,6 +59,8 @@ section{
 }
 
 .col3{
+  margin-top: 15px;
+
   position: absolute;
   width: 180px;
   height: 0px;
@@ -66,6 +72,8 @@ section{
 }
 
 .col4{
+  margin-top: 15px;
+
   position: absolute;
   width: 230px;
   height: 259px;
@@ -82,6 +90,8 @@ section{
 }
 
 .col5{
+  margin-top: 15px;
+
   position: absolute;
   width: 80px;
   height: 0px;
@@ -93,6 +103,8 @@ section{
 }
 
 .col6{
+  margin-top: 15px;
+
   position: absolute;
   width: 230px;
   height: 259px;
@@ -109,6 +121,8 @@ section{
 }
 
 .col7{
+  margin-top: 15px;
+
   position: absolute;
   width: 112px;
   height: 0px;
@@ -120,6 +134,8 @@ section{
 }
 
 .col8{
+  margin-top: 15px;
+  
   position: absolute;
   width: 230px;
   height: 259px;

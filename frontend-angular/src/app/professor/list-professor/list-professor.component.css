@@ -1,0 +1,23 @@
+.bg{
+   background: url(../../../assets/background-Professor.jpeg);
+   width: 100%;
+   height: 930px;
+   object-fit: cover;
+   object-position: center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   position: -ms-page;
+}
+
+.lista{
+    position: absolute;
+    width: 1254px;
+    height: 537px;
+    left: 200%;
+    top: 177px;
+
+    background: #FFFFFF;
+    border-radius: 13px;
+}

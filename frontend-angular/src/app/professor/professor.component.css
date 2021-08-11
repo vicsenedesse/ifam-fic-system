@@ -1,0 +1,21 @@
+/* .bg{
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-image: url("../../assets/background-Professor.jpeg");
+} */
+
+.bg{
+    background: url(../../assets/background-Professor.jpeg);
+    width: 100%;
+    height: 930px;
+    object-fit: cover;
+    object-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: -ms-page;
+ }
