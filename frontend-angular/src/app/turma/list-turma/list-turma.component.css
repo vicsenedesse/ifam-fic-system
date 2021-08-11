@@ -1,9 +1,64 @@
-body{
-  background-image: url(../../../assets/background-turma.png);
+.bg{
+  background: url(../../../assets/backgroud-Turma.jpeg);
+  width: 100%;
+  height: 930px;
+  object-fit: cover;
+  object-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: -ms-page;
 }
 
+div#dashmain{
 
-.container {
+  /* background: #F8F8FF; */
+  height: 100%;
+  width: 100%;
+  position: fixed;
+
+}
+
+.card{
+  position: relative;
+  width: 1254px;
+  height: relative;
+  left: 92px;
+  top: 177px;
+  padding: 15px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 20px 70px rgba(124, 8, 8, 0.2);
+  border-radius: 13px;
+}
+
+h2{
+  position: absolute;
+  width: 218px;
+  height: 26px;
+  left: 137px;
+  top: 119px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
   text-align: center;
-  color: white;
+
+  color: #133702;
+}
+
+.panel-body{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #133702;
 }

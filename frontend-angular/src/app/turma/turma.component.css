@@ -1,0 +1,12 @@
+.bg{
+  background: url(../../assets/backgroud-Turma.jpeg);
+  width: 100%;
+  height: 930px;
+  object-fit: cover;
+  object-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: -ms-page;
+}
