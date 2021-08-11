@@ -15,7 +15,6 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { FooterHomeComponent } from './footer-home/footer-home.component';
-import { SwiperModule } from 'swiper/angular';
 import { SwiperImagesComponent } from './home/swiper/swiper-images.component';
 import { ListTurmaComponent } from './turma/list-turma/list-turma.component';
 import { ListProfessorComponent } from './professor/list-professor/list-professor.component';
@@ -26,7 +25,7 @@ import { ListProfessorComponent } from './professor/list-professor/list-professo
     AppComponent,
 
     AlunoComponent,
-    
+
     //TURMA
     TurmaComponent,
     ListTurmaComponent,
@@ -56,9 +55,7 @@ import { ListProfessorComponent } from './professor/list-professor/list-professo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    SwiperModule
-    // SwiperModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
