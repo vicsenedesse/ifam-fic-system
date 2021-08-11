@@ -12,7 +12,8 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { FooterHomeComponent } from './footer-home/footer-home.component';
-
+import { SwiperModule } from 'swiper/angular';
+import { SwiperImagesComponent } from './home/swiper/swiper-images.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { FooterHomeComponent } from './footer-home/footer-home.component';
     FooterComponent,
     HomeComponent,
     FooterHomeComponent,
+    SwiperImagesComponent
 
 
     
@@ -35,6 +37,8 @@ import { FooterHomeComponent } from './footer-home/footer-home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    SwiperModule
+    // SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
