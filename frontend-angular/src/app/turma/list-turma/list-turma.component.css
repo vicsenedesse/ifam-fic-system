@@ -1,3 +1,4 @@
+
 .bg{
   background: url(../../../assets/backgroud-Turma.jpeg);
   width: 100%;
@@ -11,22 +12,12 @@
   position: -ms-page;
 }
 
-div#dashmain{
-
-  /* background: #F8F8FF; */
-  height: 100%;
-  width: 100%;
-  position: fixed;
-
-}
-
 .card{
   position: relative;
   width: 1254px;
   height: relative;
-  left: 92px;
-  top: 177px;
-  padding: 15px;
+  left: 200px;
+  top: 200px;
 
   background: #FFFFFF;
   box-shadow: 0px 20px 70px rgba(124, 8, 8, 0.2);
