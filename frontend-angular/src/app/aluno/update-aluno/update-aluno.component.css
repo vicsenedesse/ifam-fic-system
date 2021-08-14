@@ -1,0 +1,71 @@
+.bg{
+  background: url(../../../assets/background-Aluno.jpeg);
+  width: 100%;
+  height: 930px;
+  object-fit: cover;
+  object-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: -ms-page;
+}
+
+.card{
+  position: relative;
+  width: 600px;
+  height: 550px;
+  left: 350px;
+  top: 177px;
+  padding: 15px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 20px 70px rgba(124, 8, 8, 0.2);
+  border-radius: 8px;
+}
+
+h2#list{
+  position: absolute;
+  width: 218px;
+  height: 26px;
+  left: 250px;
+  top: 119px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #47B091;
+  cursor: pointer;
+}
+
+h2#list:hover{
+  color: #6CCB5D;
+}
+
+h2#update{
+  position: absolute;
+  width: 218px;
+  height: 26px;
+  left: 450px;
+  top: 119px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+#iconArrow{
+  position: absolute;
+  left: 452px;
+  top: 140px;
+
+  color: #FFFFFF;
+}

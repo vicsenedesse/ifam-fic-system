@@ -1,3 +1,5 @@
+import { UpdateAlunoComponent } from './aluno/update-aluno/update-aluno.component';
+import { CreateAlunoComponent } from './aluno/create-aluno/create-aluno.component';
 import { CursoFicComponent } from './curso-fic/curso-fic.component';
 import { TurmaComponent } from './turma/turma.component';
 import { ProfessorComponent } from './professor/professor.component';
@@ -8,9 +10,19 @@ import { HomeComponent } from './home/home.component';
 import { ListTurmaComponent } from './turma/list-turma/list-turma.component';
 
 const routes: Routes = [
+/*----------------- ROTAS ALUNO ------------------*/
+  {path:'aluno/cadastro', component:CreateAlunoComponent},
+  {path:'aluno/editar/:id', component:UpdateAlunoComponent},
 
+/*--------------- ROTAS PROFESSOR ----------------*/
+
+/*----------------- ROTAS TURMAS -----------------*/
+
+/*----------------- ROTAS CURSOS -----------------*/
+
+/*----------------- ROTAS GERAL ------------------*/
   {path:'cursos', component:CursoFicComponent},
-  {path:'turmas', component:ListTurmaComponent},
+  {path:'turmas', component:TurmaComponent},
   {path:'professor', component:ProfessorComponent},
   {path:'aluno', component:AlunoComponent},
   {path:'home', component:HomeComponent},
