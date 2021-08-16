@@ -44,7 +44,7 @@ export class ListProfessorComponent implements OnInit {
   }
 
   update(id: number){
-    this.router.navigate(['/adicionar/professor', id]);
+    this.router.navigate(['/atualizar/professor', id]);
   }
 
   delete(user: Professor){
@@ -72,6 +72,7 @@ export class ListProfessorComponent implements OnInit {
                                                 user.nome.toLocaleLowerCase().indexOf(this._filterBy.toLocaleLowerCase()) > -1
                                             );
     }
+    
   }
 
   get filter() { 

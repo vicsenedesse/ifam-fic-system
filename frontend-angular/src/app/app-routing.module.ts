@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { ListTurmaComponent } from './turma/list-turma/list-turma.component';
 import { ListProfessorComponent } from './professor/list-professor/list-professor.component';
 import { CreateProfessorComponent } from './professor/create-professor/create-professor.component';
+import { UpdateProfessorComponent } from './professor/update-professor/update-professor.component';
 
 const routes: Routes = [
 /*----------------- ROTAS ALUNO ------------------*/
@@ -19,6 +20,7 @@ const routes: Routes = [
 /*--------------- ROTAS PROFESSOR ----------------*/
   {path:'professor', component:ListProfessorComponent},
   {path:'adicionar/professor', component:CreateProfessorComponent},
+  {path:'atualizar/professor/:id', component:UpdateProfessorComponent},
 
 
 /*----------------- ROTAS TURMAS -----------------*/
