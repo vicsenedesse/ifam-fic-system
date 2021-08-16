@@ -8,6 +8,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ListTurmaComponent } from './turma/list-turma/list-turma.component';
+import { ListProfessorComponent } from './professor/list-professor/list-professor.component';
+import { CreateProfessorComponent } from './professor/create-professor/create-professor.component';
 
 const routes: Routes = [
 /*----------------- ROTAS ALUNO ------------------*/
@@ -15,6 +17,9 @@ const routes: Routes = [
   {path:'aluno/editar/:id', component:UpdateAlunoComponent},
 
 /*--------------- ROTAS PROFESSOR ----------------*/
+  {path:'professor', component:ListProfessorComponent},
+  {path:'adicionar/professor', component:CreateProfessorComponent},
+
 
 /*----------------- ROTAS TURMAS -----------------*/
 
@@ -23,7 +28,6 @@ const routes: Routes = [
 /*----------------- ROTAS GERAL ------------------*/
   {path:'cursos', component:CursoFicComponent},
   {path:'turmas', component:TurmaComponent},
-  {path:'professor', component:ProfessorComponent},
   {path:'aluno', component:AlunoComponent},
   {path:'home', component:HomeComponent},
   {path:'', component:HomeComponent},

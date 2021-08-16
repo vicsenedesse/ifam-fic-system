@@ -19,6 +19,8 @@ a {
     text-decoration: none;
 }
 
+
+
 .nav.logoifam{
     text-align: left;
 }
@@ -78,12 +80,19 @@ button{
     margin-right: 15px;
 
     font-size: medium;
+
+    color: aliceblue;
     /* padding-top: 1.5%; */
     /* padding: 10px ; */
+   
 }
 
 button::before{
+    
     content: '';
+    border-top: none;
+    border-left: none;
+    border-right: none;
     border-bottom: 2px solid #a00000;
     /* padding: 0 10px; */
     position: absolute;
@@ -95,13 +104,18 @@ button::before{
     transition: 0.3s;
 }
 
+button:focus{
+    -webkit-box-shadow: none;
+}
+
 button:hover:before{
+    border-color: none;
     width: 100%;
     padding: 0;
 }
 button:active{
     background: transparent;
-    color: #a00000;
+    /* color: #a00000; */
     transition: none;
 }
 

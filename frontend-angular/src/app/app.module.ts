@@ -18,6 +18,13 @@ import { FooterHomeComponent } from './footer-home/footer-home.component';
 import { SwiperImagesComponent } from './home/swiper/swiper-images.component';
 import { ListTurmaComponent } from './turma/list-turma/list-turma.component';
 import { ListProfessorComponent } from './professor/list-professor/list-professor.component';
+import { SectionComponent } from './home/section/section.component';
+import { InfoComponent } from './home/info/info.component';
+import { ProfessorService } from './service/professor.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SortPipe } from 'src/pipe/pipe.component';
+import { CreateProfessorComponent } from './professor/create-professor/create-professor.component';
 
 
 @NgModule({
@@ -33,6 +40,7 @@ import { ListProfessorComponent } from './professor/list-professor/list-professo
     //PROFESSOR
     ProfessorComponent,
     ListProfessorComponent,
+    CreateProfessorComponent,
 
 
     CursoFicComponent,
@@ -48,16 +56,27 @@ import { ListProfessorComponent } from './professor/list-professor/list-professo
     FooterComponent,
     HomeComponent,
     FooterHomeComponent,
-    SwiperImagesComponent
+    SwiperImagesComponent,
+    SectionComponent,
+    InfoComponent,
+    SortPipe
 
 
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+    
   ],
-  providers: [],
+  providers: 
+  [
+    ProfessorService,
+    HttpClient
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

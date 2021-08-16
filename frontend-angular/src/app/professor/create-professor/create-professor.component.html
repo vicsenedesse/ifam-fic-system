@@ -1,0 +1,20 @@
+<app-toolbar></app-toolbar>
+<app-footer ></app-footer>
+
+<div class="bg" >
+   <div style="margin-top: 125px; position: fixed; right: 50%; left: 0;">
+       <div class="links">
+        <h4><a [routerLink]="['/professor']" routerLinkActive="router-link-active" >Listagem de Professores&nbsp;&nbsp;</a><i class="bi bi-arrow-right" style="color: aliceblue;"></i>&nbsp;&nbsp;Cadastro de Professor</h4>
+       </div>    
+           
+       <div class="card">
+           <h5 id="professor">Professor</h5>
+           <div class="row" style="margin-top: 30px; margin-left: 20%;">
+                <input class="form-control" placeholder="Nome" style="width: 300px; margin-right: -20px;"/><i class="bi bi-person" style="margin-top: 10px;"></i>
+                <input class="form-control" placeholder="Matrícula" style="width: 300px; margin-right: -20px;"/><i class="bi bi-clipboard" style="margin-top: 10px;"></i>
+           </div>
+           <button id="adicionar" class="btn" [routerLink]="['/adicionar/professor']" routerLinkActive="router-link-active" >Cadastrar &nbsp;</button>
+       </div>
+    
+    
+</div>
