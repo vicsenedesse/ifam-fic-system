@@ -71,19 +71,38 @@ hr{
 
 #iconEdit{
   margin-left: -75px;
+  cursor: pointer;
 }
 #iconDelete{
   margin-left: -150px;
+  cursor: pointer;
 }
 
 button#new{
   width: 140px;
   height: 30px;
-  border-radius: 13px;
+  border-radius: 10px;
   color: #FFFFFF;
   background-color: #133702;
+  cursor: pointer;
 }
 
-label#busca, input#busca {
-  margin-left: 250px;
+button#new:hover{
+  color: #FF6666;
+  background-color: #5DDBC4;
+  border-color: #FF6666;
+}
+
+label#busca{
+  margin-left: 860px;
+  color: #005819;
+}
+
+input#busca{
+  margin-left: 1000px;
+  width: 400px;
+  border-top: #FFFFFF;
+  border-left: #FFFFFF;
+  border-right: #FFFFFF;
+  border-color: #005819;
 }

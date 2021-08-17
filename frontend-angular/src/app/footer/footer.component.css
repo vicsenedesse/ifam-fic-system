@@ -4,11 +4,14 @@ footer {
   bottom: 0;
   width: 100%;
   background-color: #0B2300;
+  /* background-color: transparent; */
   /* height: 113px; */
   text-align: center;
   color: aliceblue;
   padding: 40.5px;
   font-size: 28px;
+  /* display: flex; */
+    /* position: absolute; */
 }
 
 

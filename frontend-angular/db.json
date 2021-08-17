@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "professor": [
+    {
+      "id": 1,
+      "nome": "Albert França",
+      "matricula": "00963200001"
+    },
+    {
+      "id": 2,
+      "nome": "Benevaldo Pereira",
+      "matricula": "00963200002"
+    },
+    {
+      "id": 3,
+      "nome": "Carlos Louzada",
+      "matricula": "00963200003"
+    },
+    {
+      "id": 4,
+      "nome": "Amadeu Arlindo",
+      "matricula": "00963200003"
+    },
+    {
+      "id": 5,
+      "nome": "Paulo Aguila",
+      "matricula": "00963200003"
+    },
+    {
+      "id": 6,
+      "nome": "Carlos Mar",
+      "matricula": "00963200003"
+    },
+    {
+      "id": 7,
+      "nome": "Andrea Baima",
+      "matricula": "00963200003"
+    }
+  ]
+}

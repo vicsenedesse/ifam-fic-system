@@ -4,15 +4,15 @@
 <div class="bg" >
    <div style="margin-top: 125px; position: fixed; right: 50%; left: 0;">
        <div class="links">
-        <h4><a [routerLink]="['/professor']" routerLinkActive="router-link-active" >Listagem de Professores&nbsp;&nbsp;</a><i class="bi bi-arrow-right" style="color: aliceblue;"></i>&nbsp;&nbsp;Cadastro de Professor</h4>
+        <h4><a [routerLink]="['/professor']" routerLinkActive="router-link-active" >Listagem de Professores&nbsp;&nbsp;</a><i class="bi bi-arrow-right" style="color: aliceblue;"></i>&nbsp;&nbsp;Editar Professor</h4>
        </div>    
            
-       <div class="card" [hidden]="submitted">
+       <div class="card">
            <h5 id="professor">Professor</h5>
-           <form class="row" (ngSubmit)="onSubmit()" style="margin-top: 30px; margin-left: 20%;">
+           <form class="row"  #form="ngForm" (ngSubmit)="onSubmit()" style="margin-top: 30px; margin-left: 20%;">
                 <input class="form-control" placeholder="Nome" style="width: 300px; margin-right: -20px;" required [(ngModel)]="user.nome" name="name"><i class="bi bi-person" style="margin-top: 10px;"></i>
                 <input class="form-control" placeholder="Matrícula" style="width: 300px; margin-right: -20px;" required [(ngModel)]="user.matricula" name="matricula"><i class="bi bi-clipboard" style="margin-top: 10px;"></i>
-                <button type="submit" id="adicionar" class="btn" [routerLink]="['/adicionar/professor']" routerLinkActive="router-link-active" >Cadastrar &nbsp;</button>
+                <button type="submit" id="adicionar" class="btn" routerLinkActive="router-link-active" >Salvar &nbsp;</button>
            </form>
        </div> 
 </div>
