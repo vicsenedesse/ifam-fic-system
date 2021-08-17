@@ -11,6 +11,12 @@
   position: -ms-page;
 }
 
+.links{
+  margin-left: 0%;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
 .card{
   position: relative;
   width: 600px;
@@ -24,7 +30,7 @@
   border-radius: 8px;
 }
 
-h2#list{
+h4#list{
   position: absolute;
   width: 218px;
   height: 26px;
@@ -34,28 +40,27 @@ h2#list{
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
   line-height: 23px;
   text-align: center;
   color: #47B091;
   cursor: pointer;
 }
 
-h2#list:hover{
-  color: #6CCB5D;
+h4#list:hover{
+  color: #bbecde;
+  text-decoration: none;
 }
 
-h2#create{
+h4#create{
   position: absolute;
   width: 218px;
   height: 26px;
-  left: 450px;
+  left: 490px;
   top: 119px;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
   line-height: 23px;
   text-align: center;
 
@@ -64,8 +69,8 @@ h2#create{
 
 #iconArrow{
   position: absolute;
-  left: 452px;
-  top: 140px;
+  left: 470px;
+  top: 120px;
 
   color: #FFFFFF;
 }

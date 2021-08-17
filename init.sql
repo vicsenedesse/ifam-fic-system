@@ -13,6 +13,34 @@ CREATE TABLE user (
   
 );
 
+CREATE TABLE professor (
+  professor_id INT AUTO_INCREMENT NOT NULL,
+  nome VARCHAR(50) NOT NULL,
+  matricula VARCHAR(15) NOT NULL,
+
+  turma_id INT NOT NULL,
+
+  PRIMARY KEY (professor_id)
+);
+
+CREATE TABLE aluno (
+  aluno_id INT AUTO_INCREMENT NOT NULL,
+  nome VARCHAR(50) NOT NULL,
+  matricula VARCHAR(15) NOT NULL,
+
+  PRIMARY KEY (aluno_id)
+  
+);
+
+CREATE TABLE cursoFic (
+  cursoFic_id INT AUTO_INCREMENT NOT NULL,
+  nome VARCHAR(50) NOT NULL,
+
+  PRIMARY KEY (cursoFic_id)
+  
+);
+
+
 CREATE TABLE turma (
   turma_id INT AUTO_INCREMENT NOT NULL,
   nome VARCHAR(50) NOT NULL,
@@ -24,48 +52,10 @@ CREATE TABLE turma (
   cursoFic_id INT NOT NULL,
 
   FOREIGN KEY (aluno_id) references aluno(aluno_id),
-  FOREIGN KEY (professor_id) references professor(professor_id));
-  FOREIGN KEY (cursoFic_id) references cursoFic(cursoFic_id));
+  FOREIGN KEY (professor_id) references professor(professor_id),
+  FOREIGN KEY (cursoFic_id) references cursoFic(cursoFic_id),
 
   PRIMARY KEY (turma_id)
-  
-);
-
-CREATE TABLE professor (
-  professor_id INT AUTO_INCREMENT NOT NULL,
-  nome VARCHAR(50) NOT NULL,
-  matricula VARCHAR(15) NOT NULL,
-
-  turma_id INT NOT NULL,
-
-  FOREIGN KEY (turma_id) references turma(turma_id),
-
-  PRIMARY KEY (professor_id)
-  
-);
-
-CREATE TABLE aluno (
-  aluno_id INT AUTO_INCREMENT NOT NULL,
-  nome VARCHAR(50) NOT NULL,
-  matricula VARCHAR(15) NOT NULL,
-
-  turma_id INT NOT NULL,
-
-  FOREIGN KEY (turma_id) references turma(turma_id),
-
-  PRIMARY KEY (aluno_id)
-  
-);
-
-CREATE TABLE cursoFic (
-  cursoFic_id INT AUTO_INCREMENT NOT NULL,
-  nome VARCHAR(50) NOT NULL,
-
-  turma_id INT NOT NULL,
-
-  FOREIGN KEY (turma_id) references turma(turma_id),
-
-  PRIMARY KEY (cursoFic_id)
   
 );
 -- TO DO
