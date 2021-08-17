@@ -109,7 +109,7 @@ public class ProfessorController {
             @RequestParam(value = "matricula", required = false) String matricula,
             @RequestParam(value = "nome", required = false) String nome
     ) {
-        return this.professorCustomRepository.find(cpf, name)
+        return this.professorCustomRepository.find(matricula, nome)
                 .stream()
                 .map(ProfessorRs::converter)
                 .collect(Collectors.toList());

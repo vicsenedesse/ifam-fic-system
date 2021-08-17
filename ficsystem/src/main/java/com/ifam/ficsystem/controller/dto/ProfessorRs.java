@@ -8,7 +8,7 @@ import java.util.List;
 public class ProfessorRs {
 
    private Long professor_id;
-   private String cpf;
+   private String matricula;
    private String nome;
 
    private List<Turma> turmas;
@@ -20,7 +20,7 @@ public class ProfessorRs {
        var professor = new ProfessorRs();
 
        professor.setProfessor_id(t.getProfessor_id());
-       professor.setCpf(t.getCpf());
+       professor.setMatricula(t.getMatricula());
        professor.setNome(t.getNome());
 
        professor.setTurmas(t.getTurmas());
@@ -42,9 +42,9 @@ public class ProfessorRs {
     public void setProfessor_id(Long professor_id) { this.professor_id = professor_id; }
 
 
-   public String getCpf() { return cpf; }
+   public String getMatricula() { return matricula; }
 
-   public void setCpf(String cpf) { this.cpf = cpf; }
+   public void setMatricula(String matricula) { this.matricula = matricula; }
 
 
    public String getNome() { return nome; }

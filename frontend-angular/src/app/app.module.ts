@@ -28,6 +28,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SortPipe } from 'src/pipe/pipe.component';
 import { CreateProfessorComponent } from './professor/create-professor/create-professor.component';
 import { UpdateProfessorComponent } from './professor/update-professor/update-professor.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 
 @NgModule({
@@ -74,6 +76,7 @@ import { UpdateProfessorComponent } from './professor/update-professor/update-pr
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
+    NgbModule
     
   ],
   providers: 
