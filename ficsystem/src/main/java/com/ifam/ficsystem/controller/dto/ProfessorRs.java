@@ -1,8 +1,7 @@
 
-package com.controller.dto;
+package com.ifam.ficsystem.controller.dto;
 
-import com.model.Professor;
-import com.model.Turma;
+import com.ifam.ficsystem.model.Professor;
 import java.util.List;
 
 public class ProfessorRs {
@@ -11,7 +10,7 @@ public class ProfessorRs {
    private String matricula;
    private String nome;
 
-   private List<Turma> turmas;
+   //private List<Turma> turmas;
 
 
 
@@ -19,11 +18,11 @@ public class ProfessorRs {
 
        var professor = new ProfessorRs();
 
-       professor.setProfessor_id(t.getProfessor_id());
+       professor.setProfessorId(t.getProfessorId());
        professor.setMatricula(t.getMatricula());
        professor.setNome(t.getNome());
 
-       professor.setTurmas(t.getTurmas());
+       //professor.setTurmas(t.getTurmas());
 
 
     
@@ -31,15 +30,15 @@ public class ProfessorRs {
    }
 
 
-    public List<Turma> getTurmas() { return turmas; }
+    //public List<Turma> getTurmas() { return turmas; }
 
-    public void setTurmas(List<Turma> turmas) { this.turmas = turmas; }
+   // public void setTurmas(List<Turma> turmas) { this.turmas = turmas; }
 
 
 
-    public Long getProfessor_id() { return professor_id; }
+    public Long getProfessorId() { return professor_id; }
 
-    public void setProfessor_id(Long professor_id) { this.professor_id = professor_id; }
+    public void setProfessorId(Long professor_id) { this.professor_id = professor_id; }
 
 
    public String getMatricula() { return matricula; }

@@ -1,7 +1,6 @@
-package com.controller.dto;
+package com.ifam.ficsystem.controller.dto;
 
-import com.model.Aluno;
-import com.model.Turma;
+import com.ifam.ficsystem.model.Aluno;
 import java.util.List;
 
 
@@ -10,15 +9,6 @@ public class AlunoRq {
    private Long aluno_id;
    private String matricula;
    private String nome;
-
-   private List<Turma> turmas;
-
-
-  public List<Turma> getTurmas() { return turmas; }
-
-  public void setTurmas(List<Turma> turmas) { this.turmas = turmas; }
-
-
 
    public Long getAluno_id() { return aluno_id; }
 

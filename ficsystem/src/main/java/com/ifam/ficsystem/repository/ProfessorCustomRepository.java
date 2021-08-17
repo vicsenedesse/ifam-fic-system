@@ -1,6 +1,6 @@
-package com.repository;
+package com.ifam.ficsystem.repository;
 
-import com.model.Professor;
+import com.ifam.ficsystem.model.Professor;
 
 import org.springframework.stereotype.Repository;
 

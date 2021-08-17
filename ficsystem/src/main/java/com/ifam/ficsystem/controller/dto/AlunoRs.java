@@ -1,7 +1,6 @@
-package com.controller.dto;
+package com.ifam.ficsystem.controller.dto;
 
-import com.model.Aluno;
-import com.model.Turma;
+import com.ifam.ficsystem.model.Aluno;
 import java.util.List;
 
 public class AlunoRs {
@@ -10,35 +9,24 @@ public class AlunoRs {
    private String matricula;
    private String nome;
 
-   private List<Turma> turmas;
-
 
 
    public static AlunoRs converter(Aluno a) {
 
        var aluno = new AlunoRs();
 
-       aluno.setAluno_id(t.getAluno_id());
-       aluno.setMatricula(t.getMatricula());
-       aluno.setNome(t.getNome());
-
-       aluno.setTurmas(t.getTurmas());
+       aluno.setAlunoId(a.getAlunoId());
+       aluno.setMatricula(a.getMatricula());
+       aluno.setNome(a.getNome());
 
 
     
        return aluno;
    }
 
+public Long getAlunoId() { return aluno_id; }
 
-    public List<Turma> getTurmas() { return turmas; }
-
-    public void setTurmas(List<Turma> turmas) { this.turmas = turmas; }
-
-
-
-    public Long getAluno_id() { return aluno_id; }
-
-    public void setAluno_id(Long aluno_id) { this.aluno_id = aluno_id; }
+    public void setAlunoId(Long aluno_id) { this.aluno_id = aluno_id; }
 
 
    public String getMatricula() { return matricula; }

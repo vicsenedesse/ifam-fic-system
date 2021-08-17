@@ -1,4 +1,4 @@
-package com.controller;
+package com.ifam.ficsystem.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-import com.controller.dto.AlunoRq;
-import com.controller.dto.AlunoRs;
-import com.model.Aluno;
-import com.repository.AlunoCustomRepository;
-import com.repository.AlunoRepository;
+import com.ifam.ficsystem.controller.dto.AlunoRq;
+import com.ifam.ficsystem.controller.dto.AlunoRs;
+import com.ifam.ficsystem.model.Aluno;
+import com.ifam.ficsystem.repository.AlunoCustomRepository;
+import com.ifam.ficsystem.repository.AlunoRepository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -49,19 +49,19 @@ public class AlunoController {
     @GetMapping("/{aluno_id}") 
     public AlunoRs findByAlunoId(@PathVariable("aluno_id") Long aluno_id) {
         var aluno = alunoRepository.getOne(aluno_id);
-        return alunoRs.converter(aluno);
+        return AlunoRs.converter(aluno);
     }
 
     @CrossOrigin(origins = "http://localhost:4200")
     @PostMapping("/aluno")  
     public ResponseEntity<String> savePerson(@RequestBody AlunoRq aluno) {
-        var Na = new NAluno();
+        var Na = new Aluno();
 
         Na.setNome(aluno.getNome());
         Na.setMatricula(aluno.getMatricula());
         
 
-        alunoRepository.save(t);
+        alunoRepository.save(Na);
         return ResponseEntity.ok("Sucesso!");
 
     }
@@ -83,9 +83,9 @@ public class AlunoController {
     }
 
     @DeleteMapping(path ={"/{aluno_id}"})
-    public ResponseEntity <AlunoRs> delete(@PathVariable long aluno_id) {
-       return repository.findById(aluno_id).map(record -> {
-           repository.deleteById(aluno_id);
+    public ResponseEntity <?> delete(@PathVariable long aluno_id) {
+       return alunoRepository.findById(aluno_id).map(record -> {
+           alunoRepository.deleteById(aluno_id);
            return ResponseEntity.ok().build();
         }).orElse(ResponseEntity.notFound().build());
     }
@@ -106,7 +106,7 @@ public class AlunoController {
         @RequestParam(value = "matricula", required = false) String matricula,
         @RequestParam(value = "nome", required = false) String nome
     )
-    {return this.alunoCustomRepository.find(matricula, name)
+    {return this.alunoCustomRepository.find(matricula, nome)
         .stream()
         .map(AlunoRs::converter)
         .collect(Collectors.toList());
