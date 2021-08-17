@@ -17,8 +17,8 @@ public class Professor{
    @Column(name = "nome")
    private String name;
 
-   @Column(name = "matrícula")
-   private String age;
+   @Column(name = "matricula")
+   private String matricula;
 
    private List<Turma> turmas;
 

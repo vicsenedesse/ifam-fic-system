@@ -4,6 +4,8 @@ import { Observable, Subject } from 'rxjs';
 import { Professor } from 'src/app/model/professor.model';
 import { ProfessorService } from 'src/app/service/professor.service';
 
+import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+
 @Component({
   selector: 'app-list-professor',
   templateUrl: './list-professor.component.html',
@@ -29,6 +31,7 @@ export class ListProfessorComponent implements OnInit {
   constructor(
     private ProfessorService: ProfessorService,
     private router: Router,
+
   )
   {}
 
@@ -78,6 +81,7 @@ export class ListProfessorComponent implements OnInit {
   get filter() { 
     return this._filterBy;
   }
+
 
   
 

@@ -19,7 +19,7 @@ export class ProfessorService {
     }
 
     delete(id: any): Observable<any>{
-        return this.http.delete<any>(`${this.baseUrl}/${id}`);
+        return this.http.delete<any>(`${this.baseUrl}${id}`);
     }
 
     getUser() : Observable<any> {

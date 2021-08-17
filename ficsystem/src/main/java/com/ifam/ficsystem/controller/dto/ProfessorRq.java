@@ -26,9 +26,9 @@ public class TutorRq {
    public void setProfessor_id(Long professor_id) { this.professor_id = professor_id; }
 
 
-   public String getCpf() { return cpf; }
+   public String getMatricula() { return matricula; }
 
-   public void setCpf(String cpf) { this.cpf = cpf; }
+   public void setMatricula(String matricula) { this.matricula = matricula; }
 
 
    public String getNome() { return nome; }
