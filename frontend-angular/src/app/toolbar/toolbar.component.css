@@ -66,8 +66,6 @@ a:hover {
     font-size: larger;
 }
 
-
-
 button{
     background: transparent;
     border: none;
@@ -163,12 +161,12 @@ button:visited:before{
 
 /* Detalhes modal */
 #login{
-    margin-left: 40%; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 38%; 
+    font-family:  sans-serif ;
     /* width: 68px;
     height: 26px; */
     margin-top: 45px;
-    font-weight: bolder;
+    font-weight: 500;
     
     /* font-style: normal; */
     /* font-weight: 500; */
@@ -179,5 +177,57 @@ button:visited:before{
     text-align: center;
 
     color: #005819;
+    margin-bottom: 30px;
 
 }
+
+#username{
+    width: 222px;
+    margin-bottom: 35px;
+    /* margin-left: 70px; */
+    /* margin-top: 90px; */
+}
+
+#password{
+    width: 222px;
+    margin-bottom: 20px;
+    /* margin-left: 70px; */
+    /* margin-right: 0; */
+}
+
+
+
+/* #user{
+    margin-top: 90px;
+} */
+
+/* #lock{
+    margin-top: 20px;
+} */
+
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #133702;
+    border-radius: 0%;
+    /* margin-bottom: 40px; */
+    margin-right: 0;
+    background-color: transparent;
+}
+
+input:focus{
+    -webkit-box-shadow: none;
+    border-color: rgb(149, 10, 161);
+    background-color: transparent;
+}
+
+#username::placeholder{
+    color: #005819;
+    
+}
+
+#password::placeholder{
+    color: #005819;
+}
+/* form */

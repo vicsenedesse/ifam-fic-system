@@ -46,15 +46,15 @@ export class ListProfessorComponent implements OnInit {
     });
   }
 
-  update(id: number){
-    this.router.navigate(['/atualizar/professor', id]);
+  update(professorId: number){
+    this.router.navigate(['/atualizar/professor', professorId]);
   }
 
   delete(user: Professor){
     console.log(user)
-    this.ProfessorService.delete(user.id).subscribe((resposta)=>{
+    this.ProfessorService.delete(user.professorId).subscribe((resposta)=>{
       console.log("resposta ao deletar item", resposta)
-      const indexDeletedUser = this._users.findIndex((item) => item.id == user.id)
+      const indexDeletedUser = this._users.findIndex((item) => item.professorId == user.professorId)
       this._users.splice(indexDeletedUser, 1)
       this.filteredUser = this._users
       this._filterBy = ""
@@ -66,7 +66,7 @@ export class ListProfessorComponent implements OnInit {
     this._filterBy = any;
     if (any >= 0){
       this.filteredUser = this._users.filter((any: Professor) => 
-                                                              any.id.toString().indexOf(this._filterBy) > -1 ||
+                                                              any.professorId.toString().indexOf(this._filterBy) > -1 ||
                                                               any.matricula.toString().indexOf(this._filterBy) > -1
                                             );
     }

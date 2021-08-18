@@ -48,7 +48,7 @@
 </div>
 
 
-<!-- MODAL -->
+<!-- MODAL !!-->
 
 
 <ng-template #content role="document" let-modal class="modal-dialog">
@@ -62,23 +62,27 @@
     <div class="modal-content" style="width: 403px;
     height: 661px; background-color: transparent;"> -->
     <div class="modal-body template">
-      <form>
-        <div class="form-group">
-          <label for="dateOfBirth" id="login">Login</label>
-          <div class="input-group">
-            <input id="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #dp="ngbDatepicker">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary calendar" (click)="dp.toggle()" type="button"></button>
+      <label id="login">LOGIN</label><br>
+      <form class="row" style="padding: 80px;">
+            <i id="user" class="bi bi-person" style="margin-right: -5px; margin-top: 7px; color: #133702; font-size: 18px"></i><input id="username" class="form-control" required placeholder=" Username" style="margin-left: -8px;"><br>
+            <i id="lock" class="bi bi-lock" style="margin-top: 7px; color: #133702; font-size: 18px"></i><input id="password" class="form-control" required placeholder=" Password" style="margin-left: -12px;">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked style="background-color: transparent; border-radius: 0%;">
+              <label class="form-check-label" for="flexCheckChecked" style="color: #8C0000;">
+                Lembrar senha
+              </label>
             </div>
-          </div>
-        </div>
       </form>
+      
+      <!-- </div>
+      </div> -->
+      <!-- <div class="modal-footer"> -->
+        <a id="btnlogin" class="btn" (click)="modal.close('Save click')" style="align-self: center; margin-left: 98px; background: linear-gradient(180deg, rgba(255, 255, 255, 0.56) 0%, #C7FFC9 100%);
+        border-radius: 10px; width: 167px; color: #600000; margin-top: 20px;">Login</a>
+        <h6 style="margin-left: 110px; margin-top: 70px; color: aliceblue;">Esqueceu a senha?</h6>
+        <a style="margin-left: 150px; color: aliceblue;">Sing Up</a>
+        <!-- </div> -->
     </div>
-    <!-- </div>
-    </div> -->
-    <!-- <div class="modal-footer">
-      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
-    </div> -->
   </ng-template>
 
   
