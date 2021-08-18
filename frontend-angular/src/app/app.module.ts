@@ -31,6 +31,7 @@ import { CreateProfessorComponent } from './professor/create-professor/create-pr
 import { UpdateProfessorComponent } from './professor/update-professor/update-professor.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CreateTurmaComponent } from './turma/create-turma/create-turma.component';
+import { ViewTurmaComponent } from './turma/view-turma/view-turma.component';
 
 
 
@@ -45,6 +46,7 @@ import { CreateTurmaComponent } from './turma/create-turma/create-turma.componen
     ListTurmaComponent,
     CreateTurmaComponent,
     UpdateTurmaComponent,
+    ViewTurmaComponent,
 
     //PROFESSOR
     ProfessorComponent,

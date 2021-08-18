@@ -3,8 +3,8 @@
 <div class="bg">
   <div style="margin-top: 125px; position: fixed; right: 50%; left: 0;"></div>
   <div class="links">
-    <h4 id="list" routerLink="/aluno" routerLinkActive="router-link-active">Listagem de Curso FIC</h4>
-    <i id="iconArrow" class="bi bi-arrow-right" style="color: aliceblue;"></i>
+    <h4 id="list" routerLink="/cursos" routerLinkActive="router-link-active">Listagem de Curso FIC</h4>
+    <i id="iconArrow" class="bi bi-arrow-right"></i>
     <h4 id="create">Criar Turma</h4>
   <div class="card">
     <div id="title">
@@ -12,11 +12,16 @@
     </div>
     <form id="form" class="row">
       <input class="form-control" type="text" placeholder="Nome da Turma" style="width: 300px; margin-right: -20px;"><i class="bi bi-pencil-square"style="margin-top: 10px;"></i>
-      <input class="form-control" type="date" placeholder="Data Início" style="width: 300px; margin-right: -20px; margin-top: 30px"><i class="bi bi-clipboard" style="margin-top: 40px;"></i>
-      <input class="form-control" type="date" placeholder="Data Fim" style="width: 300px; margin-right: -20px; margin-top: 30px"><i class="bi bi-clipboard" style="margin-top: 40px;"></i>
-      <input class="form-control" type="text" placeholder="Professor" style="width: 300px; margin-right: -20px; margin-top: 30px"><i class="bi bi-clipboard" style="margin-top: 40px;"></i>
+      <input class="form-control" type="date" placeholder="Data Início" style="width: 300px; margin-right: -20px; margin-top: 30px">
+      <input class="form-control" type="date" placeholder="Data Fim" style="width: 300px; margin-right: -20px; margin-top: 30px">
+      <div class="form-group">
+        <select class="form-control" style="width: 300px; margin-top: 30px;">
+          <option selected>Professor</option>
+          <option>Benevaldo</option>
+        </select>
+      </div>
     </form>
-    <button type="submit" class="btn">Cadastrar</button>
+    <button routerLink="/cursos" type="submit" class="btn">Cadastrar</button>
   </div>
 </div>
 
