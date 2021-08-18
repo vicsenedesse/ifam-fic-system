@@ -63,15 +63,6 @@ h4{
   color: #133702;
 }
 
-#iconEdit{
-  margin-left: -75px;
-  cursor: pointer;
-}
-#iconDelete{
-  margin-left: -150px;
-  cursor: pointer;
-}
-
 button{
   background-color: transparent;
 }
@@ -80,6 +71,14 @@ button{
   background-color: #133702;
   border-radius: 0%;
   color: #FFFFFF;
+}
+
+#edit{
+  -webkit-box-shadow: none;
+}
+
+#trash{
+  -webkit-box-shadow: none;
 }
 
 input{

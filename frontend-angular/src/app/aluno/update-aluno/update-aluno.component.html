@@ -1,14 +1,20 @@
 <app-toolbar></app-toolbar>
 
 <div class="bg">
-  <h2 routerLink="/aluno" id="list">Listagem de Alunos</h2>
-  <i id="iconArrow" class="bi bi-arrow-right"></i>
-  <h2 id="update">Update de Alunos</h2>
+  <div style="margin-top: 125px; position: fixed; right: 50%; left: 0;"></div>
+  <div class="links">
+    <h4 id="list" routerLink="/aluno" routerLinkActive="router-link-active">Listagem de Alunos</h4>
+    <i id="iconArrow" class="bi bi-arrow-right" style="color: aliceblue;"></i>
+    <h4 id="create">Atualização de Alunos</h4>
   <div class="card">
-    <label id="title">ALUNO</label>
-    <input type="text" placeholder="Nome">
-    <input type="text" placeholder="Matrícula">
-    <button>Salvar</button>
+    <div id="title">
+      <label>ALUNO</label>
+    </div>
+    <form id="form" class="row">
+      <input id="name" class="form-control" type="text" placeholder="Nome do aluno do id selecionado" style="width: 300px; margin-right: -20px;"><i class="bi bi-person" style="margin-top: 10px;"></i>
+      <input id="matricula" class="form-control" type="text" placeholder="Matrícula do aluno do id selecionado" style="width: 300px; margin-right: -20px; margin-top: 30px"><i class="bi bi-clipboard" style="margin-top: 40px;"></i>
+    </form>
+    <button routerLink="/aluno" type="submit" class="btn">Salvar</button>
   </div>
 </div>
 

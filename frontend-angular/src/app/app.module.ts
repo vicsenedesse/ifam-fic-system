@@ -1,3 +1,4 @@
+import { UpdateTurmaComponent } from './turma/update-turma/update-turma.component';
 import { ListAlunoComponent } from './aluno/list-aluno/list-aluno.component';
 import { UpdateAlunoComponent } from './aluno/update-aluno/update-aluno.component';
 import { CreateAlunoComponent } from './aluno/create-aluno/create-aluno.component';
@@ -29,6 +30,7 @@ import { SortPipe } from 'src/pipe/pipe.component';
 import { CreateProfessorComponent } from './professor/create-professor/create-professor.component';
 import { UpdateProfessorComponent } from './professor/update-professor/update-professor.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CreateTurmaComponent } from './turma/create-turma/create-turma.component';
 
 
 
@@ -41,6 +43,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     //TURMA
     TurmaComponent,
     ListTurmaComponent,
+    CreateTurmaComponent,
+    UpdateTurmaComponent,
 
     //PROFESSOR
     ProfessorComponent,
@@ -77,9 +81,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ReactiveFormsModule,
     FormsModule,
     NgbModule
-    
+
   ],
-  providers: 
+  providers:
   [
     ProfessorService,
     HttpClient

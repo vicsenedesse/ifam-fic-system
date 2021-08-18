@@ -7,10 +7,14 @@
     <i id="iconArrow" class="bi bi-arrow-right" style="color: aliceblue;"></i>
     <h4 id="create">Cadastro de Alunos</h4>
   <div class="card">
-    <label id="title">ALUNO</label>
-    <input class="form-control" type="text" placeholder="Nome">
-    <input class="form-control" type="text" placeholder="Matrícula">
-    <button>Cadastrar</button>
+    <div id="title">
+      <label>ALUNO</label>
+    </div>
+    <form id="form" class="row">
+      <input id="name" class="form-control" type="text" placeholder="Nome" style="width: 300px; margin-right: -20px;"><i class="bi bi-person" style="margin-top: 10px;"></i>
+      <input id="matricula" class="form-control" type="text" placeholder="Matrícula" style="width: 300px; margin-right: -20px; margin-top: 30px"><i class="bi bi-clipboard" style="margin-top: 40px;"></i>
+    </form>
+    <button routerLink="/aluno" type="submit" class="btn">Cadastrar</button>
   </div>
 </div>
 
