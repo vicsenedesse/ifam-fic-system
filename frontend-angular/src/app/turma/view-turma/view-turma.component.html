@@ -1,15 +1,19 @@
 <app-toolbar></app-toolbar>
+
+
+
+
 <div class="bg">
-  <h4>Listagem de Turmas</h4>
+  <div class="links">
+    <h4 id="list" routerLink="/turmas" routerLinkActive="router-link-active">Listagem de Turmas</h4>
+    <i id="iconArrow" class="bi bi-arrow-right"></i>
+    <h4 id="view">Visualizar Turma</h4>
+  </div>
   <div class="card">
-    <div class="row" style="margin-top: 30px; margin-left: 40px;">
-      <div class="col-sm">
-      </div>
-      <div class="row" id="search">
-        <div class="col">
-          <input class="form-control" style="width: 450px; margin-right: 40px;" type="text" placeholder="Buscar Turma">
-        </div>
-      </div>
+    <div class="info">
+      <h5>Nome do Curso</h5>
+      <h6>Período: Data inicio - a - Data fim</h6>
+      <h6>Professor: Nome do Professor</h6>
     </div>
 
     <div class="panel-body" >
@@ -21,9 +25,8 @@
             <th scope="col">#</th>
             <th scope="col"></th>
             <th scope="col"></th>
-            <th scope="col">Nome</th>
-            <th scope="col">Data Início</th>
-            <th scope="col">Data Fim</th>
+            <th scope="col">Matrícula</th>
+            <th scope="col">Alunos</th>
             <th scope="col"></th>
             <th scope="col">&nbsp;&nbsp;&nbsp;&nbsp;Ações</th>
           </tr>
@@ -34,13 +37,10 @@
               <td>id</td>
               <td></td>
               <td></td>
-              <td>Nome Turma</td>
-              <td>Inicio</td>
-              <td>Fim</td>
+              <td>123445</td>
+              <td>Rapha</td>
               <td></td>
               <td>
-                <button routerLink="/turmas/visualizar/:nome" id="look" class="btn"><i class="bi bi-eye" style="color: #47B091; font-size: larger;"></i></button>&nbsp;
-                <button routerLink="/turmas/editar/:id" id="edit" class="btn"><i class="bi bi-pen" style="color:#00692C; font-size: larger;"></i></button>&nbsp;
                 <button id="trash" class="btn"><i class="bi bi-trash" style="color: #9C1010; font-size: larger;"></i></button>
               </td>
             </tr>

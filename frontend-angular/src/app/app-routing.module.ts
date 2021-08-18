@@ -1,3 +1,4 @@
+import { CreateTurmaComponent } from './turma/create-turma/create-turma.component';
 import { UpdateTurmaComponent } from './turma/update-turma/update-turma.component';
 import { UpdateAlunoComponent } from './aluno/update-aluno/update-aluno.component';
 import { CreateAlunoComponent } from './aluno/create-aluno/create-aluno.component';
@@ -12,7 +13,11 @@ import { ListTurmaComponent } from './turma/list-turma/list-turma.component';
 import { ListProfessorComponent } from './professor/list-professor/list-professor.component';
 import { CreateProfessorComponent } from './professor/create-professor/create-professor.component';
 import { UpdateProfessorComponent } from './professor/update-professor/update-professor.component';
+<<<<<<< HEAD
 import { UserComponent } from './user/user.component';
+=======
+import { ViewTurmaComponent } from './turma/view-turma/view-turma.component';
+>>>>>>> 7f9011f0520b1ec19b37c5b03e2a7b29f23664d5
 
 const routes: Routes = [
 /*----------------- ROTAS ALUNO ------------------*/
@@ -28,9 +33,9 @@ const routes: Routes = [
 
 /*----------------- ROTAS TURMAS -----------------*/
   {path:'turmas', component:TurmaComponent},
-  /*{path:'turmas/cadastro'},
-  {path:'turmas/visualizar/:id'},*/
+  {path:'turmas/cadastro', component:CreateTurmaComponent},
   {path:'turmas/editar/:id', component:UpdateTurmaComponent},
+  {path:'turmas/visualizar/:nome', component:ViewTurmaComponent},
 
 /*----------------- ROTAS CURSOS -----------------*/
 {path:'cursos', component:CursoFicComponent},
