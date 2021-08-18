@@ -13,11 +13,8 @@ import { ListTurmaComponent } from './turma/list-turma/list-turma.component';
 import { ListProfessorComponent } from './professor/list-professor/list-professor.component';
 import { CreateProfessorComponent } from './professor/create-professor/create-professor.component';
 import { UpdateProfessorComponent } from './professor/update-professor/update-professor.component';
-<<<<<<< HEAD
 import { UserComponent } from './user/user.component';
-=======
 import { ViewTurmaComponent } from './turma/view-turma/view-turma.component';
->>>>>>> 7f9011f0520b1ec19b37c5b03e2a7b29f23664d5
 
 const routes: Routes = [
 /*----------------- ROTAS ALUNO ------------------*/
