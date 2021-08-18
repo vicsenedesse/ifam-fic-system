@@ -16,7 +16,7 @@ public class Aluno{
    @Column(name = "nome")
    private String nome;
 
-   @Column(name = "matrícula")
+   @Column(name = "matricula")
    private String matricula;
 
 

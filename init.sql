@@ -3,7 +3,7 @@ USE db_ficsystem;
 
 
 CREATE TABLE user (
-  id INT AUTO_INCREMENT NOT NULL,
+  user_id INT AUTO_INCREMENT NOT NULL,
   name VARCHAR(50) NOT NULL,
   login VARCHAR(30) NOT NULL,
   password VARCHAR(20) NOT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE professor (
   nome VARCHAR(50) NOT NULL,
   matricula VARCHAR(15) NOT NULL,
 
-  turma_id INT NOT NULL,
+  -- turma_id INT NOT NULL,
 
   PRIMARY KEY (professor_id)
 );
@@ -42,7 +42,7 @@ CREATE TABLE cursoFic (
 
 
 CREATE TABLE turma (
-  turma_id INT AUTO_INCREMENT NOT NULL,
+  id INT AUTO_INCREMENT NOT NULL,
   nome VARCHAR(50) NOT NULL,
   dataInicio TIME NOT NULL,
   dataFim TIME NOT NULL,
@@ -55,17 +55,27 @@ CREATE TABLE turma (
   FOREIGN KEY (professor_id) references professor(professor_id),
   FOREIGN KEY (cursoFic_id) references cursoFic(cursoFic_id),
 
-  PRIMARY KEY (turma_id)
+  PRIMARY KEY (id)
   
 );
 -- TO DO
 -- SCRIPTS
 
--- INSERT INTO user(id, name, login, password, email) 
--- VALUES (1,'Raphaela Goes','rapha.goes','s3nh4','email1@email.com');
+INSERT INTO user(id, name, login, password, email) 
+VALUES (1,'Raphaela Goes','rapha.goes','s3nh4','email1@email.com');
 
--- INSERT INTO user(id, name, login, password, email) 
--- VALUES (2,'Rodrigo Carvalho','rodrigo.carvalho','s3nh4','email2@email.com');
+INSERT INTO user(id, name, login, password, email) 
+VALUES (2,'Rodrigo Carvalho','rodrigo.carvalho','s3nh4','email2@email.com');
 
--- INSERT INTO user(id, name, login, password, email) 
--- VALUES (3,'Victoria Senedesse','victoria.senedesse','s3nh4','email3@email.com');
+INSERT INTO user(id, name, login, password, email) 
+VALUES (3,'Victoria Senedesse','victoria.senedesse','s3nh4','email3@email.com');
+
+
+INSERT INTO professor(id, name, login, password, email) 
+VALUES (1,'Raphaela Goes','rapha.goes','s3nh4','email1@email.com');
+
+INSERT INTO professor(id, name, login, password, email) 
+VALUES (2,'Rodrigo Carvalho','rodrigo.carvalho','s3nh4','email2@email.com');
+
+INSERT INTO professor(id, name, login, password, email) 
+VALUES (3,'Victoria Senedesse','victoria.senedesse','s3nh4','email3@email.com');

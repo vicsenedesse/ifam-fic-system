@@ -19,6 +19,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
 
 
 .nav.logoifam{
@@ -125,3 +129,55 @@ button:visited:before{
 }
 
 
+
+/* MODAL */
+.template {
+    /* position: absolute; */
+    width: 402px;
+    height: 661px;
+    border-radius: 20px;
+
+    background: linear-gradient(90deg, rgba(82, 255, 154, 0.67) 0%, rgba(255, 13, 13, 0.67) 100%);
+    background-blend-mode: multiply;
+    /* border-radius: 20px; */
+}
+
+.modal-content{
+    background-color: transparent;
+    width: 403px;
+    height: 661px;
+}
+
+/* .modal-dialog{
+    max-width: 400px;
+} */
+
+@media (min-width: 506px)
+{
+.modal-dialog {
+    max-width: 400px;
+    margin: 1.75rem auto;
+}
+}
+
+
+/* Detalhes modal */
+#login{
+    margin-left: 40%; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* width: 68px;
+    height: 26px; */
+    margin-top: 45px;
+    font-weight: bolder;
+    
+    /* font-style: normal; */
+    /* font-weight: 500; */
+    font-size: 28px;
+    line-height: 26px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #005819;
+
+}

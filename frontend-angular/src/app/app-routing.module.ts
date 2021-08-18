@@ -11,6 +11,7 @@ import { ListTurmaComponent } from './turma/list-turma/list-turma.component';
 import { ListProfessorComponent } from './professor/list-professor/list-professor.component';
 import { CreateProfessorComponent } from './professor/create-professor/create-professor.component';
 import { UpdateProfessorComponent } from './professor/update-professor/update-professor.component';
+import { UserComponent } from './user/user.component';
 
 const routes: Routes = [
 /*----------------- ROTAS ALUNO ------------------*/
@@ -33,6 +34,7 @@ const routes: Routes = [
   {path:'aluno', component:AlunoComponent},
   {path:'home', component:HomeComponent},
   {path:'', component:HomeComponent},
+  {path:'user', component:UserComponent},
 
 ];
 

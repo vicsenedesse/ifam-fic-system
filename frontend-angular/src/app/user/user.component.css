@@ -1,0 +1,28 @@
+.template {
+    /* position: absolute; */
+    width: 402px;
+    height: 661px;
+    border-radius: 20px;
+
+    background: linear-gradient(90deg, rgba(82, 255, 154, 0.67) 0%, rgba(255, 13, 13, 0.67) 100%);
+    background-blend-mode: multiply;
+    /* border-radius: 20px; */
+}
+
+.modal-content{
+    background-color: transparent;
+    width: 403px;
+    height: 661px;
+}
+
+/* .modal-dialog{
+    max-width: 400px;
+} */
+
+@media (min-width: 506px)
+{
+.modal-dialog {
+    max-width: 400px;
+    margin: 1.75rem auto;
+}
+}
