@@ -23,7 +23,7 @@ public class Aluno {
     @Column(name = "nome")
     private String name;
 
-    @Column(name = "matrícula")
+    @Column(name = "matricula")
     private String matricula;
 
     @ManyToMany(cascade = { CascadeType.MERGE, CascadeType.PERSIST })

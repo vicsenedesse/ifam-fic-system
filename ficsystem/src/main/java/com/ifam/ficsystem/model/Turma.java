@@ -23,16 +23,16 @@ public class Turma {
     @Column(name = "nome")
     private String nome;
 
-    @Column(name = "dataInicio")
+    @Column(name = "data_inicio")
     private String dataInicio;
 
-    @Column(name = "dataFim")
+    @Column(name = "data_fim")
     private String dataFim;
 
     @Column(name = "professor")
     private String professor;
 
-    @Column(name = "cursoFic")
+    @Column(name = "curso_fic")
     private String cursoFic;
 
     @ManyToMany(mappedBy = "turmas")
