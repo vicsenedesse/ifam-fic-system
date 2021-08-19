@@ -1,35 +1,49 @@
 <app-toolbar></app-toolbar>
 <div class="bg">
-  <h2>Listagem de Alunos</h2>
+  <h4>Listagem de Alunos</h4>
   <div class="card">
-    <div id="control">
-      <button routerLink="/aluno/cadastro" type="button" id="new" class="btn">Novo Aluno +</button>
-      <label id="busca">Buscar Aluno</label><br>
-      <input id="busca" type="text">
+    <div class="row" style="margin-top: 30px; margin-left: 40px;">
+      <div class="col-sm">
+        <button id="adicionar" class="btn" routerLink="/aluno/cadastro" routerLinkActive="router-link-active" >Novo Aluno &nbsp;<i class="bi bi-plus-lg" style="font-size: small;"></i></button>
+      </div>
+      <div class="row" id="search">
+        <div class="col">
+          <input class="form-control" style="width: 450px; margin-right: 40px;" type="text" placeholder="Buscar Aluno">
+        </div>
+      </div>
     </div>
 
     <div class="panel-body" >
       <table id="title" class="table" cellspacing="0" width="100%">
         <thead class="table-light" >
           <tr style="font-family: 'Roboto', 'normal'; color: #133702;">
+            <th scope="col"></th>
+            <th scope="col"></th>
             <th scope="col">#</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
             <th scope="col">Matrícula</th>
             <th scope="col">Nome</th>
-            <th scope="col">Ações</th>
+            <th scope="col"></th>
+            <th scope="col">&nbsp;&nbsp;&nbsp;&nbsp;Ações</th>
           </tr>
-          <hr><br>
           <tbody>
-              <tr style="font-family: 'Roboto', 'normal'; color: #133702;">
-              <td>1</td>
-              <td>2019001011</td>
-              <td>Raphaela Goes</td>
-              <td><i routerLink="/aluno/editar/:id" id="iconEdit" class="bi bi-pencil" style="color: #00692C"></i></td>
-              <td><i id="iconDelete" class="bi bi-trash btn" style="color: #9C1010"></i></td>
+            <tr scope="row" style="font-family: 'Roboto', 'normal'; color: #133702;">
+                <td></td>
+                <td></td>
+                <td>id</td>
+                <td></td>
+                <td></td>
+                <td>Nome</td>
+                <td>Matricula</td>
+                <td></td>
+                <td>
+                  <button routerLink="/aluno/editar/:id" id="edit" class="btn"><i class="bi bi-pen" style="color:#00692C; font-size: larger;"></i></button>&nbsp;
+                  <button id="trash" class="btn"><i class="bi bi-trash" style="color: #9C1010; font-size: larger;"></i></button>
+                </td>
             </tr>
           </tbody>
-
       </table>
-    </div>
   </div>
 </div>
 

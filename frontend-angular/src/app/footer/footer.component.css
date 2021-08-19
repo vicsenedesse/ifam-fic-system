@@ -14,5 +14,10 @@ footer {
     /* position: absolute; */
 }
 
+i:hover{
+  cursor: pointer;
+  color: #bbecde;
+}
+
 
 

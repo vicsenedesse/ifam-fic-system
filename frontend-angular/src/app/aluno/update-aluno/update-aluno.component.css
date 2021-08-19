@@ -11,20 +11,35 @@
   position: -ms-page;
 }
 
+.links{
+  margin-left: 0%;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
 .card{
   position: relative;
-  width: 600px;
-  height: 550px;
+  width: 455px;
+  height: 438px;
   left: 350px;
   top: 177px;
-  padding: 15px;
+  padding: 90px;
 
   background: #FFFFFF;
   box-shadow: 0px 20px 70px rgba(124, 8, 8, 0.2);
   border-radius: 8px;
 }
 
-h2#list{
+#title{
+  margin-top: -55px;
+  text-align: center;
+}
+
+#form{
+  margin-top: 55px;
+}
+
+h4#list{
   position: absolute;
   width: 218px;
   height: 26px;
@@ -34,28 +49,27 @@ h2#list{
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
   line-height: 23px;
   text-align: center;
   color: #47B091;
   cursor: pointer;
 }
 
-h2#list:hover{
-  color: #6CCB5D;
+h4#list:hover{
+  color: #bbecde;
+  text-decoration: none;
 }
 
-h2#update{
+h4#create{
   position: absolute;
   width: 218px;
   height: 26px;
-  left: 450px;
+  left: 490px;
   top: 119px;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
   line-height: 23px;
   text-align: center;
 
@@ -64,8 +78,42 @@ h2#update{
 
 #iconArrow{
   position: absolute;
-  left: 452px;
-  top: 140px;
+  left: 470px;
+  top: 120px;
 
   color: #FFFFFF;
+}
+
+input{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #133702;
+  border-radius: 0%;
+}
+input:focus{
+  -webkit-box-shadow: none;
+  border-color: rgb(149, 10, 161);
+}
+
+.btn{
+  margin-top: 50px;
+  margin-left: 60px;
+  color: #FFFFFF;
+  background-color: #133702;
+  width: 139px;
+  height: 44px;
+}
+
+i{
+  color: #133702;
+}
+
+
+#name{
+  -webkit-box-shadow: none;
+}
+
+#matricula{
+  -webkit-box-shadow: none;
 }

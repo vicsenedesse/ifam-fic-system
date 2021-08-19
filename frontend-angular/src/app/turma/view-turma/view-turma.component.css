@@ -1,5 +1,5 @@
 .bg{
-  background: url(../../../assets/background-Aluno.jpeg);
+  background: url(../../../assets/backgroud-Turma.jpeg);
   width: 100%;
   height: 930px;
   object-fit: cover;
@@ -11,32 +11,41 @@
   position: -ms-page;
 }
 
-.links{
-  margin-left: 0%;
+div#dashmain{
+
+  /* background: #F8F8FF; */
+  height: 100%;
   width: 100%;
-  margin-bottom: 30px;
+  position: fixed;
+
 }
 
 .card{
   position: relative;
-  width: 455px;
-  height: 438px;
-  left: 350px;
+  width: 1400px;
+  height: relative;
+  left: 225px;
   top: 177px;
-  padding: 90px;
+  padding: 15px;
 
   background: #FFFFFF;
-  box-shadow: 0px 20px 70px rgba(124, 8, 8, 0.2);
-  border-radius: 8px;
+  border-radius: 13px;
 }
 
-#title{
-  margin-top: -55px;
+h4{
+  position: absolute;
+  width: 218px;
+  height: 26px;
+  left: 250px;
+  top: 119px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 23px;
   text-align: center;
-}
 
-#form{
-  margin-top: 55px;
+  color: #133702;
 }
 
 h4#list{
@@ -56,11 +65,11 @@ h4#list{
 }
 
 h4#list:hover{
-  color: #bbecde;
+  color: #3a413f;
   text-decoration: none;
 }
 
-h4#create{
+h4#view{
   position: absolute;
   width: 218px;
   height: 26px;
@@ -73,15 +82,22 @@ h4#create{
   line-height: 23px;
   text-align: center;
 
-  color: #FFFFFF;
+  color: #133702;
 }
 
-#iconArrow{
-  position: absolute;
-  left: 470px;
-  top: 120px;
+.panel-body{
+  margin-top: 30px;
+  margin-left: 35px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 
-  color: #FFFFFF;
+  color: #133702;
 }
 
 input{
@@ -96,24 +112,39 @@ input:focus{
   border-color: rgb(149, 10, 161);
 }
 
-.btn{
-  margin-top: 50px;
-  margin-left: 60px;
-  color: #FFFFFF;
-  background-color: #133702;
-  width: 139px;
-  height: 44px;
+button{
+  background-color: transparent;
 }
 
-i{
+#edit{
+  -webkit-box-shadow: none;
+}
+
+#trash{
+  -webkit-box-shadow: none;
+}
+
+#look{
+  -webkit-box-shadow: none;
+}
+
+#iconArrow{
+  position: absolute;
+  margin-left: 480px;
+  margin-top: 120px;
+  color: #131313;;
+}
+
+h5{
   color: #133702;
+  margin-left: 90px;
 }
 
-
-#name{
-  -webkit-box-shadow: none;
+h6{
+  color: #BEBEBE;
+  margin-left: 90px;
 }
 
-#matricula{
-  -webkit-box-shadow: none;
+.info{
+  margin-top: 40px;
 }

@@ -1,7 +1,6 @@
 
 
-package com.controller;
-import com.repository.TutorRepository;
+package com.ifam.ficsystem.controller;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -14,11 +13,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-import com.controller.dto.ProfessorRq;
-import com.controller.dto.ProfessorRs;
-import com.model.Professor;
-import com.repository.ProfessorCustomRepository;
-import com.repository.ProfessorRepository;
+import com.ifam.ficsystem.controller.dto.ProfessorRq;
+import com.ifam.ficsystem.controller.dto.ProfessorRs;
+import com.ifam.ficsystem.model.Professor;
+import com.ifam.ficsystem.repository.ProfessorCustomRepository;
+import com.ifam.ficsystem.repository.ProfessorRepository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -51,16 +50,16 @@ public class ProfessorController {
     @GetMapping("/{professor_id}") 
     public ProfessorRs findByProfessorId(@PathVariable("professor_id") Long professor_id) {
         var professor = professorRepository.getOne(professor_id);
-        return professorRs.converter(professor);
+        return ProfessorRs.converter(professor);
     }
 
     @CrossOrigin(origins = "http://localhost:4200")
     @PostMapping("/professor")  
     public ResponseEntity<String> savePerson(@RequestBody ProfessorRq professor) {
-        var t = new Tutor();
+        var t = new Professor();
 
-        t.setNome(tutor.getNome());
-        t.setMatricula(tutor.getMatricula());
+        t.setNome(professor.getNome());
+        t.setMatricula(professor.getMatricula());
         
 
         professorRepository.save(t);
@@ -86,10 +85,10 @@ public class ProfessorController {
     }
 
     @DeleteMapping(path ={"/{professor_id}"})
-    public ResponseEntity <ProfessorRs> delete(@PathVariable long professor_id) {
-       return repository.findById(professor_id)
+    public ResponseEntity <?> delete(@PathVariable long professor_id) {
+       return professorRepository.findById(professor_id)
                .map(record -> {
-                   repository.deleteById(professor_id);
+                   professorRepository.deleteById(professor_id);
                    return ResponseEntity.ok().build();
                }).orElse(ResponseEntity.notFound().build());
     }
@@ -109,7 +108,7 @@ public class ProfessorController {
             @RequestParam(value = "matricula", required = false) String matricula,
             @RequestParam(value = "nome", required = false) String nome
     ) {
-        return this.professorCustomRepository.find(cpf, name)
+        return this.professorCustomRepository.find(matricula, nome)
                 .stream()
                 .map(ProfessorRs::converter)
                 .collect(Collectors.toList());

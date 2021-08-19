@@ -1,23 +1,22 @@
 
-package com.controller.dto;
+package com.ifam.ficsystem.controller.dto;
 
-import com.model.Professor;
-import com.model.Turma;
+import com.ifam.ficsystem.model.Professor;
 import java.util.List;
 
 
-public class TutorRq {
+public class ProfessorRq {
 
    private Long professor_id;
    private String matricula;
    private String nome;
 
-   private List<Turma> turmas;
+   //private List<Turma> turmas;
 
 
-  public List<Turma> getTurmas() { return turmas; }
+  //public List<Turma> getTurmas() { return turmas; }
 
-  public void setTurmas(List<Turma> turmas) { this.turmas = turmas; }
+  //public void setTurmas(List<Turma> turmas) { this.turmas = turmas; }
 
 
 
@@ -26,9 +25,9 @@ public class TutorRq {
    public void setProfessor_id(Long professor_id) { this.professor_id = professor_id; }
 
 
-   public String getCpf() { return cpf; }
+   public String getMatricula() { return matricula; }
 
-   public void setCpf(String cpf) { this.cpf = cpf; }
+   public void setMatricula(String matricula) { this.matricula = matricula; }
 
 
    public String getNome() { return nome; }

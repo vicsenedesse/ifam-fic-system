@@ -1,6 +1,6 @@
-package com.repository;
+package com.ifam.ficsystem.repository;
 
-import com.model.Aluno;
+import com.ifam.ficsystem.model.Aluno;
 
 import org.springframework.stereotype.Repository;
 

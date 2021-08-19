@@ -1,4 +1,4 @@
-package com.model;
+package com.ifam.ficsystem.model;
 
 import javax.persistence.*;
 
@@ -14,24 +14,15 @@ public class Aluno{
    private Long aluno_id;
 
    @Column(name = "nome")
-   private String name;
+   private String nome;
 
-   @Column(name = "matrícula")
+   @Column(name = "matricula")
    private String matricula;
 
-   private List<Turma> turmas;
 
-
-   @OneToMany(mappedBy = "aluno_id", cascade = CascadeType.ALL)
-   public List<Turma> getTurmas() { return turmas; }
+   public Long getAlunoId() { return aluno_id; }
    
-   public void setTurmas(List<Turma> turmas) { this.turmas = turmas; }
-
-
-
-   public Long getProfessorId() { return aluno_id; }
-   
-   public void setProfessorId(Long aluno_id) { this.aluno_id = aluno_id; }
+   public void setAlunoId(Long aluno_id) { this.aluno_id = aluno_id; }
 
 
    public String getNome() { return nome; }

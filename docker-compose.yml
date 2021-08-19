@@ -35,7 +35,7 @@ services:
     # command: mvn clean install
     build:
       context: ./
-      dockerfile: ./user/Dockerfile
+      dockerfile: ./ficsystem/Dockerfile
     image: ficsystem/api
 
     ports:
@@ -44,7 +44,7 @@ services:
     volumes:
       - "./ficsystem:/home/ficsystem"
     environment:
-      - ADDITIONAL_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5006 -Xmx1G -Xms128m -XX:MaxMetaspaceSize=128m
+      - ADDITIONAL_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -Xmx1G -Xms128m -XX:MaxMetaspaceSize=128m
       - PROFILE=dev
       - MYSQL_ROOT_PASSWORD=password
       - MYSQL_DATABASE=db_ficsystem

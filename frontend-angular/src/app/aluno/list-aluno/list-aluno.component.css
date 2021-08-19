@@ -32,7 +32,7 @@ div#dashmain{
   border-radius: 13px;
 }
 
-h2{
+h4{
   position: absolute;
   width: 218px;
   height: 26px;
@@ -42,18 +42,12 @@ h2{
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
   line-height: 23px;
   text-align: center;
 
   color: #FFFFFF;
 }
 
-hr{
-  margin-left: -35px;
-  position: absolute;
-  width: 1400px;
-}
 
 .panel-body{
   margin-top: 30px;
@@ -69,40 +63,32 @@ hr{
   color: #133702;
 }
 
-#iconEdit{
-  margin-left: -75px;
-  cursor: pointer;
-}
-#iconDelete{
-  margin-left: -150px;
-  cursor: pointer;
+button{
+  background-color: transparent;
 }
 
-button#new{
-  width: 140px;
-  height: 30px;
-  border-radius: 10px;
-  color: #FFFFFF;
+#adicionar {
   background-color: #133702;
-  cursor: pointer;
+  border-radius: 0%;
+  color: #FFFFFF;
 }
 
-button#new:hover{
-  color: #FF6666;
-  background-color: #5DDBC4;
-  border-color: #FF6666;
+#edit{
+  -webkit-box-shadow: none;
 }
 
-label#busca{
-  margin-left: 860px;
-  color: #005819;
+#trash{
+  -webkit-box-shadow: none;
 }
 
-input#busca{
-  margin-left: 1000px;
-  width: 400px;
-  border-top: #FFFFFF;
-  border-left: #FFFFFF;
-  border-right: #FFFFFF;
-  border-color: #005819;
+input{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #133702;
+  border-radius: 0%;
+}
+input:focus{
+  -webkit-box-shadow: none;
+  border-color: rgb(149, 10, 161);
 }

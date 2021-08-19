@@ -1,4 +1,4 @@
-package com.controller;
+package com.ifam.ficsystem.controller;
 
 
 import org.springframework.context.annotation.Configuration;

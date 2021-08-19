@@ -11,15 +11,15 @@ export class ProfessorService {
 
   constructor(
     private http: HttpClient) { }
-    private baseUrl: string = 'http://localhost:3000/professor/';
+    private baseUrl: string = 'http://localhost:8080/api/professor/';
 
 
     create(user: Professor): Observable<any> {
-      return this.http.post<any>(this.baseUrl, user);
+      return this.http.post<any>(this.baseUrl + 'professor', user);
     }
 
-    delete(id: any): Observable<any>{
-        return this.http.delete<any>(`${this.baseUrl}/${id}`);
+    delete(professorId: any): Observable<any>{
+        return this.http.delete<any>(`${this.baseUrl}${professorId}`);
     }
 
     getUser() : Observable<any> {
@@ -30,16 +30,16 @@ export class ProfessorService {
     //   return this.http.get<any>(`${this.baseUrl}/${id}`);
     // }
 
-    getById(id: number): Observable<any> {
-      return this.http.get(this.baseUrl + id);
+    getById(professorId: number): Observable<any> {
+      return this.http.get(this.baseUrl + professorId);
     }
 
     // update(id: number, user: Professor): Observable<any> {
     //    return this.http.put<any>(`${this.baseUrl}${id}`, user);
     // }
 
-    update(id: number, user: Professor): Observable<any> {
-      return this.http.put<any>(this.baseUrl + user.id, user);
+    update(professorId: number, user: Professor): Observable<any> {
+      return this.http.put<any>(this.baseUrl + user.professorId, user);
     }
 
 }

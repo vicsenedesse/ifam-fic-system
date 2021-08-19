@@ -1,6 +1,6 @@
 export class Professor {
 
-    id!: number;
+    professorId!: number;
     matricula!: number;
     nome!: string;
 }
