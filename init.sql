@@ -104,17 +104,17 @@ VALUES (3,'Victoria Senedesse','2019001013');
 INSERT INTO aluno(aluno_id, nome, matricula) 
 VALUES (4,'Yasmin Martins','2019001014');
 
-INSERT INTO turma(turma_id, nome, data_inicio, data_fim) 
-VALUES (1,'Fundamentos de Docker','27/08/2021','15/09/2021');
+INSERT INTO turma(turma_id, nome, data_inicio, data_fim, professor, curso_fic) 
+VALUES (1,'Fundamentos de Docker','27/08/2021','15/09/2021', 'Benevaldo', 'Docker');
 
-INSERT INTO turma(turma_id, nome, data_inicio, data_fim) 
-VALUES (2,'Segurança da Informação','24/09/2021','20/10/2021');
+INSERT INTO turma(turma_id, nome, data_inicio, data_fim, professor, curso_fic) 
+VALUES (2,'Segurança da Informação','24/09/2021','20/10/2021', 'Amadeu Arlindo', 'Segurança');
 
-INSERT INTO turma(turma_id, nome, data_inicio, data_fim) 
-VALUES (3,'Desenvolvimento Web em Angular','14/10/2021','05/11/2021');
+INSERT INTO turma(turma_id, nome, data_inicio, data_fim, professor, curso_fic) 
+VALUES (3,'Desenvolvimento Web em Angular','14/10/2021','05/11/2021','Carlos Mar', 'Angular');
 
-INSERT INTO turma(turma_id, nome, data_inicio, data_fim) 
-VALUES (4,'UI/UX Design','14/10/2021','05/11/2021');
+INSERT INTO turma(turma_id, nome, data_inicio, data_fim, professor, curso_fic) 
+VALUES (4,'UI/UX Design','14/10/2021','05/11/2021', 'Albert França', 'Design');
 
-INSERT INTO turma(turma_id, nome, data_inicio, data_fim) 
-VALUES (5,'Desenvolvimento de Jogos','20/10/2021','15/11/2021');
+INSERT INTO turma(turma_id, nome, data_inicio, data_fim, professor, curso_fic) 
+VALUES (5,'Desenvolvimento de Jogos','20/10/2021','15/11/2021', 'Paulo Aguila', 'Jogos');
