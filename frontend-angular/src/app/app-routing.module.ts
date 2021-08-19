@@ -27,7 +27,6 @@ const routes: Routes = [
   {path:'adicionar/professor', component:CreateProfessorComponent},
   {path:'atualizar/professor/:id', component:UpdateProfessorComponent},
 
-
 /*----------------- ROTAS TURMAS -----------------*/
   {path:'turmas', component:TurmaComponent},
   {path:'turmas/cadastro', component:CreateTurmaComponent},

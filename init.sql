@@ -121,4 +121,4 @@ INSERT INTO turma(turma_id, nome, data_inicio, data_fim, professor, curso_fic)
 VALUES (4,'UI/UX Design','14/10/2021','05/11/2021', 'Amadeu Arlindo', 'UI/UX Design');
 
 INSERT INTO turma(turma_id, nome, data_inicio, data_fim, professor, curso_fic) 
-VALUES (5,'Desenvolvimento de Jogos','20/10/2021','15/11/2021', 'Carlos Louzada', 'Desenvolvimento de Jogos');
+VALUES (5,'Desenvolvimento de Jogos','20/10/2021','15/11/2021', 'Paulo Aguila', 'Desenvolvimento de Jogos');
