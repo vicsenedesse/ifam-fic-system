@@ -41,9 +41,10 @@ CREATE TABLE cursoFic (
 CREATE TABLE turma (
   turma_id INT AUTO_INCREMENT NOT NULL,
   nome VARCHAR(255) NOT NULL,
-  dataInicio DATE NOT NULL,
-  dataFim DATE NOT NULL,
+  dataInicio VARCHAR(10) NOT NULL,
+  dataFim VARCHAR(10) NOT NULL,
   professor VARCHAR(255) NOT NULL,
+  cursoFic VARCHAR(255) NOT NULL,
 
   PRIMARY KEY (turma_id)
   
