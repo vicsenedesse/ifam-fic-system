@@ -19,9 +19,9 @@
 
 .card{
   position: relative;
-  width: 455px;
+  width: 500px;
   height: 438px;
-  left: 350px;
+  left: 400px;
   top: 177px;
   padding: 90px;
 
@@ -98,7 +98,7 @@ input:focus{
 
 .btn{
   margin-top: 50px;
-  margin-left: 60px;
+  margin-left: 90px;
   color: #FFFFFF;
   background-color: #133702;
   width: 139px;

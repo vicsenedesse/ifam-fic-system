@@ -15,16 +15,16 @@ USE db_ficsystem;
 
 CREATE TABLE professor (
   professor_id INT AUTO_INCREMENT NOT NULL,
-  nome VARCHAR(50) NOT NULL,
-  matricula VARCHAR(15) NOT NULL,
+  nome VARCHAR(255) NOT NULL,
+  matricula VARCHAR(255) NOT NULL,
 
   PRIMARY KEY (professor_id)
 );
 
 CREATE TABLE aluno (
   aluno_id INT AUTO_INCREMENT NOT NULL,
-  nome VARCHAR(50) NOT NULL,
-  matricula VARCHAR(15) NOT NULL,
+  nome VARCHAR(255) NOT NULL,
+  matricula VARCHAR(255) NOT NULL,
 
   PRIMARY KEY (aluno_id)
   
@@ -32,29 +32,30 @@ CREATE TABLE aluno (
 
 CREATE TABLE cursoFic (
   cursoFic_id INT AUTO_INCREMENT NOT NULL,
-  nome VARCHAR(50) NOT NULL,
+  nome VARCHAR(255) NOT NULL,
 
   PRIMARY KEY (cursoFic_id)
   
 );
 
-
 CREATE TABLE turma (
-  id INT AUTO_INCREMENT NOT NULL,
-  nome VARCHAR(50) NOT NULL,
-  dataInicio TIME NOT NULL,
-  dataFim TIME NOT NULL,
+  turma_id INT AUTO_INCREMENT NOT NULL,
+  nome VARCHAR(255) NOT NULL,
+  dataInicio DATE NOT NULL,
+  dataFim DATE NOT NULL,
+  professor VARCHAR(255) NOT NULL,
 
-  aluno_id INT NOT NULL,
-  professor_id INT NOT NULL,
-  cursoFic_id INT NOT NULL,
-
-  FOREIGN KEY (aluno_id) references aluno(aluno_id),
-  FOREIGN KEY (professor_id) references professor(professor_id),
-  FOREIGN KEY (cursoFic_id) references cursoFic(cursoFic_id),
-
-  PRIMARY KEY (id)
+  PRIMARY KEY (turma_id)
   
+);
+
+CREATE TABLE turma_aluno(
+  aluno_id INT NOT NULL,
+  turma_id INT NOT NULL,
+
+  FOREIGN KEY (aluno_id) REFERENCES aluno(aluno_id),
+  FOREIGN KEY (turma_id) REFERENCES turma(turma_id)
+
 );
 -- TO DO
 -- SCRIPTS
