@@ -1,7 +1,7 @@
 package com.ifam.ficsystem.controller;
 
 
-import org.springframework.context.annotation.Configuration;
+/*import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -18,4 +18,4 @@ public class CorsConfiguration implements WebMvcConfigurer {
             .allowedOrigins("http://localhost:8080")
             .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD", "TRACE", "CONNECT");
     }
-}
+}*/
