@@ -91,3 +91,30 @@ VALUES (6,'Carlos Mar','00963200006');
 
 INSERT INTO professor(professor_id, nome, matricula) 
 VALUES (7,'Andrea Baima','00963200007');
+
+INSERT INTO aluno(aluno_id, nome, matricula) 
+VALUES (1,'Raphaela Goes','2019001011');
+
+INSERT INTO aluno(aluno_id, nome, matricula) 
+VALUES (2,'Rodrigo Moura','2019001012');
+
+INSERT INTO aluno(aluno_id, nome, matricula) 
+VALUES (3,'Victoria Senedesse','2019001013');
+
+INSERT INTO aluno(aluno_id, nome, matricula) 
+VALUES (4,'Yasmin Martins','2019001014');
+
+INSERT INTO turma(turma_id, nome, data_inicio, data_fim) 
+VALUES (1,'Fundamentos de Docker','27/08/2021','15/09/2021');
+
+INSERT INTO turma(turma_id, nome, data_inicio, data_fim) 
+VALUES (2,'Segurança da Informação','24/09/2021','20/10/2021');
+
+INSERT INTO turma(turma_id, nome, data_inicio, data_fim) 
+VALUES (3,'Desenvolvimento Web em Angular','14/10/2021','05/11/2021');
+
+INSERT INTO turma(turma_id, nome, data_inicio, data_fim) 
+VALUES (4,'UI/UX Design','14/10/2021','05/11/2021');
+
+INSERT INTO turma(turma_id, nome, data_inicio, data_fim) 
+VALUES (5,'Desenvolvimento de Jogos','20/10/2021','15/11/2021');
