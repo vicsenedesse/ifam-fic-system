@@ -52,5 +52,8 @@ obs: comandos para linux
 ~ Diretório principal ifam-fic-system -
 
       docker-compose up
+ 
+ 
+ps: este projeto continuará em desenvolvimento.
 
 
