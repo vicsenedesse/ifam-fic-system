@@ -46,7 +46,9 @@ obs: comandos para linux
       mvn clean install
     
 ~ Diretório frontend Angular -
-  
+      
+      npm install
+      
       npm run start
 
 ~ Diretório principal ifam-fic-system -
